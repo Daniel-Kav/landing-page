@@ -8,6 +8,10 @@
     flex-direction: row-reverse;
     margin-right: 10px;
 }
+.firstpage{
+    display: flex;
+    flex: 1;
+}
 nav {
     background-color: #1F2937;
   }
@@ -15,6 +19,7 @@ body{
     background-color: #1F2937;
     height: 100%;
     width: auto;
+    background-image: -moz-repeating-linear-gradient();
 }
 nav ul {
     list-style-type: none;
@@ -34,7 +39,6 @@ nav ul li a {
     color:rgb(248, 242, 242);
     font-weight: bold;
 }
-  
 nav ul li a:hover {
     background-color: #651919;
 }
@@ -43,8 +47,50 @@ header{
     display: flex;
     flex: auto;
 }
-.logo img {
-    height: 10px;
+#logo {
+    height: 50px;
     width: auto;
     display: flex;
+    display: flex;
+    flex: auto;
+    justify-content: flex-start;
+    margin-left: 5px;
+    align-self: flex-start;
+}
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+.content{
+    display: inline-block;
+    font: 1em sans-serif;
+    
 }
