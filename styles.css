@@ -1,96 +1,43 @@
-.navbar{
-    background-color: #1F2937;
-    font-family: roboto;
-    font-size: 16px;
-    display: flex;
-    justify-content: stretch;
-    align-items: flex-end;
-    flex-direction: row-reverse;
-    margin-right: 10px;
-}
-.firstpage{
-    display: flex;
-    flex: 1;
-}
-nav {
-    background-color: #1F2937;
-  }
-body{
-    background-color: #1F2937;
-    height: 100%;
-    width: auto;
-    background-image: -moz-repeating-linear-gradient();
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
+*{
     padding: 0;
-}
-  
-nav ul li {
-    display: inline-block;
-}
-  
-nav ul li a {
-    display: flex;
-    justify-content: flex-end;
-    padding: 12px;
+    margin: 0;
     text-decoration: none;
-    color:rgb(248, 242, 242);
-    font-weight: bold;
+    list-style: none;
+    box-sizing: border-box;
 }
-nav ul li a:hover {
-    background-color: #651919;
+body{
+    font-family: montserrat ,roboto;
 }
-header{
-    display: inline;
-    display: flex;
-    flex: auto;
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
 }
-#logo {
-    height: 50px;
-    width: auto;
-    display: flex;
-    display: flex;
-    flex: auto;
-    justify-content: flex-start;
-    margin-left: 5px;
-    align-self: flex-start;
-}
-button {
-    display: flex;
-    align-items: center;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 17px;
-    padding: 0.8em 1.3em 0.8em 0.9em;
+label.logo{
     color: white;
-    background: #ad5389;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    border: none;
-    letter-spacing: 0.05em;
-    border-radius: 16px;
-  }
-  
-  button svg {
-    margin-right: 3px;
-    transform: rotate(30deg);
-    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  
-  button span {
-    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  
-  button:hover svg {
-    transform: translateX(5px) rotate(90deg);
-  }
-  
-  button:hover span {
-    transform: translateX(7px);
-  }
-.content{
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
     display: inline-block;
-    font: 1em sans-serif;
-    
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 15px;
+    border-radius: 4px ;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
 }
