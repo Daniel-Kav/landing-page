@@ -98,3 +98,9 @@ section{
     background-size: cover;
     height: calc(100vh -80px);
 }
+body {
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
