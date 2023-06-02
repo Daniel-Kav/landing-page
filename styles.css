@@ -38,4 +38,13 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #651919;
 }
-  
+header{
+    display: inline;
+    display: flex;
+    flex: auto;
+}
+.logo img {
+    height: 10px;
+    width: auto;
+    display: flex;
+}
