@@ -8,10 +8,28 @@
 body{
     font-family: montserrat ,roboto;
 }
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #59809e;
+
+}
 nav{
-    background: #0082e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00e604;
     height: 80px;
     width: 100%;
+    padding : 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 label.logo{
     color: white;
@@ -41,3 +59,4 @@ a.active,a:hover{
     background: #1b9bff;
     transition: .5s;
 }
+
