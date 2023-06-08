@@ -10,6 +10,7 @@
 </head>
 <body>
     <section>
+        <div class="circle"></div>
         <nav>
             <label class="logo">DANTY</label>
             <ul>
@@ -21,7 +22,7 @@
         </nav>
         <div class="content">
             <div class="text">
-                <h2>Its not just coffee <br> It's <span>Starbucks</span></h2>
+                <h2>It's not just coffee <br> It's <span>Starbucks</span></h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 
                     5
@@ -36,9 +37,30 @@
                 </div>
         </div>
         <div class="imgbox">
-            <img src="images/img1.png" alt="">
+            <img src="images/img1.png" alt="" class="starbucks">
 
         </div>
+        <div>
+            <ul class="thumb">
+                <li><img src="images/thumb1.png" alt="" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+                <li><img src="images/thumb2.png" alt="" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="images/thumb3.png" alt="" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
     </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;  
+        }
+    </script>
 </body>
 </html>
