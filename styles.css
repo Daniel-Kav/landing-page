@@ -189,3 +189,10 @@ h3{
     justify-content: space-evenly;
     align-items: center;
 }
+center{
+    display: inline-block;
+    align-items: center;
+    justify-content: baseline;
+    padding-top: 20px;
+    padding-left: 50px;
+}
